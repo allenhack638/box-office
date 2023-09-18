@@ -3,7 +3,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./Components/HomePage/Home";
 import Starred from "./Components/HomePage/Starred";
 import MainLayout from "./Components/HomePage/MainLayout";
-import ShowPage from "./Components/Details/ShowPage";
+import ShowPage from "./Components/MainPage/ShowPage";
 import { GlobalTheme } from "./GlobalTheme";
 
 function App() {
