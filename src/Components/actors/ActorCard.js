@@ -2,6 +2,7 @@ import { SearchCard, SearchImgWrapper } from "../Globalcss/SearchCard";
 const ActorCard = ({
   actor: { name, image, gender, country, deathday, birthday },
 }) => {
+  console.log(country)
   return (
     <SearchCard>
       <SearchImgWrapper>
@@ -17,7 +18,7 @@ const ActorCard = ({
       <h1>
         {name} {!!gender && `(${gender})`}
       </h1>
-      <p>{country ? `Comes from ${country}` : "No country known"}</p>
+      <p>{country ? `Comes from ${country.name}` : "No country known"}</p>
       {!!birthday && <p>Born {birthday}</p>}
       <p>{deathday ? `Died ${deathday}` : "Alive"}</p>
     </SearchCard>
